@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question No. 1</title>
+</head>
+
+<body>
+    <h1>Question No. 1</h1>
+    <p>W Write a JavaScript conditional statement to find the sign of a number. Display
+        an alert box with the specified sign.</p>
+</body>
+
+</html>
+
+<script>
+    let value = parseFloat(prompt("Please Enter a Number"));
+    if(isNaN(value)){
+        alert("Invalid input. Please enter numbers only.")
+    }
+    else{
+        var get_val = value;
+        if(get_val > 0){
+            alert("The sign is +")
+        }
+
+        else if(get_val < 0){
+            alert("The sign is -")
+        }
+
+        else{
+            alert("Enter Value is 0")
+        }
+    }
+</script>
