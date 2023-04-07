@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question No. 3</title>
+</head>
+<body>
+    <h1>Question No. 3</h1>
+    <p>Write a JavaScript program that accepts five numbers in five prompts and
+        displays the larger one in the console.
+        </p>
+</body>
+</html>
+<script>
+
+    let number1 = parseFloat(prompt("Please Enter Numbers"));
+    let number2 = parseFloat(prompt("Please Enter Numbers"));
+    let number3 = parseFloat(prompt("Please Enter Numbers"));
+    let number4 = parseFloat(prompt("Please Enter Numbers"));
+    let number5 = parseFloat(prompt("Please Enter Numbers"));
+
+
+    if(isNaN(number1) || isNaN(number2) || isNaN(number3) || isNaN(number4) || isNaN(number5)){
+        console.log("Invalid input. Please enter numbers only.");
+    } 
+    else{
+        if(number2 > number1){
+            number1 = number2
+        }
+        
+        if(number3 > number1){
+            number1 = number3
+        }
+
+        if(number4 > number1){
+            number1 = number4
+        }
+
+        if(number5 > number1){
+            number1 = number5
+        }
+
+        console.log("Largest Number is:" +  " " + number1)
+    }
+</script>
