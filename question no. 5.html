@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question No. 4</title>
+</head>
+
+<body>
+    <h1>Question No. 5</h1>
+    <p>Write a JavaScript program which computes the average marks of the
+        following students Then, this average is used to determine the corresponding
+        grade.</p>
+</body>
+
+</html>
+
+<script>
+
+    let get_val = parseInt(prompt("Enter Students Marks betwen 0 t0 100"));
+
+    if (isNaN(get_val)) {
+        alert("Invalid input. Please enter numbers only.")
+    }
+    else {
+
+        if (get_val <= 60) {
+            document.write("Got F Grade");
+        }
+
+        else if (get_val <= 70) {
+            document.write("Got D Grade");
+        }
+
+        else if (get_val <= 80) {
+            document.write("Got C Grade");
+        }
+
+        else if (get_val <= 90) {
+            document.write("Got B Grade");
+        }
+
+        else if (get_val <= 100) {
+            document.write("Got A Grade");
+        }
+
+        else {
+            document.write("Exceed to 100");
+        }
+    }
+</script>
